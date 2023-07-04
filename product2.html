@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/efb2c829e3.js" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="logo" id="logoShop">
+            <h1>Mallery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="titles"><a href="/home.html">Home</a></li>
+                <li class="titles"><a href="/product1.html">Product1</a></li>
+                <li class="titles"><a href="/product2.html">Product2</a></li>
+                <button class="shoppingCart" id="js--shoppingcart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="shoppingCart__message">0</div>
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <header class="balk"></header>
+    <main>
+        <section class="inputs">
+            <div>
+                <input id="checkbox-low" type="checkbox" class="filter">
+                <label for="checkbox-low" class="label">€10-20</label>
+            </div>
+            <div>
+                <input id="checkbox-medium" type="checkbox" class="filter">
+                <label for="checkbox-medium" class="label">€20-40</label>
+            </div>  
+            <div>
+                <input id="checkbox-high" type="checkbox" class="filter">
+                <label for="checkbox-high" class="label">€40-60</label>  
+            </div>
+        </section>
+        <article id="js--lokiModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/lokichain.webp" alt="Groene Loki ketting met een groene logo van Loki " class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Groene Loki ketting €11,00</h2>
+                <p class="modal__text">
+                    Deze Marvel Loki silvere ketting is gemaakt van puur silver en is met de hand gemaakt. We hebben deze in
+                    verschillende maten van lengtes voor vrouwen en mannen. Zoals 40cm, 45cm en 50cm voor vrouwen en voor mannen:
+                    50-55 cm.
+
+                </p>
+                <button data-product="loki" class="marvel__button">Add to Cart</button>
+            </section>
+        </article>
+        <article id="js--blackWidowModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/blackwidow.webp" alt="Marvel black widow ketting" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Marvel black widow ketting €30,00</h2>
+                <p class="modal__text">
+                    Deze Marvel Black Widow  ketting is gemaakt van silver en diamant . We hebben deze in verschillende maten
+                    van lengtes voor vrouwen en mannen. Zoals 40cm, 45cm en 50cm voor vrouwen en voor mannen:50-55 cm.
+                </p>
+                <button data-product="blackWidowStones" class="marvel__button">Add to Cart</button>
+            </section>
+        </article>
+        <article id="js--GrootModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/Groot.webp" alt="Doctor Strange tijd ketting" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Mrvel Groot ring €21,00</h2>
+                <p class="modal__text">
+                    Deze Doctor Strange tijd ketting is gemaakt van silver en past makkelijk op je fingers.
+                    We hebben verschillende soorten maten voor onze ringen. (Als u niet weet welke maat u heeft vraag het
+                    aan onze klantenservice.)
+                </p>
+                <button data-product="groot" class="marvel__button">Add to Cart</button>
+            </section>
+        </article>    
+    </main>
+    <footer class="balk"></footer>
+    <footer class="footer"></footer>
+</body>
+</html>

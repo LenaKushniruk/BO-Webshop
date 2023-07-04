@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product1</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/efb2c829e3.js" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="logo" id="logoShop">
+            <h1>Mallery</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="titles"><a href="/home.html">Home</a></li>
+                <li class="titles"><a href="/product1.html">Product1</a></li>
+                <li class="titles"><a href="/product2.html">Product2</a></li>          
+                <button class="shoppingCart" id="js--shoppingcart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="shoppingCart__message">0</div>
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <header class="balk"></header>
+
+    <section id="js--checkoutWindow" class="checkout">
+        <ul class="checkout__list">
+            <li class="checkout__listItem">
+                <img src="/img/marvel-thanos-infinity-gauntlet-ring-gold-steel-3_600x.webp" alt="Pandora marvel infinity stones ring " class="checkout__image">
+                <p class="checkout__title">Marvel infinity ring </p>
+                <p id="js--amount-infinity" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/7401057016394.webp" alt="Marvel avengers logo zilvere ketting" class="checkout__image">
+                <p class="checkout__title">Marvel avengers logo ketting</p>
+                <p id="js--amount-avengers" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/Movie-Jewelry-Doctor-Necklace-Dr-Strange-Steve-Cosplay-Agamotto-Eye-Pendent-Necklace-Genuine-Leather.webp" alt="Marvel Doctor strange tijd ketting" class="checkout__image">
+                <p class="checkout__title">Doctor strange ketting</p>
+                <p id="js--amount-drStrange" class="checkout__amount"></p>
+            </li>
+            <li class="checkout__listItem">
+                <img src="/img/marvel-thanos-infinity-gauntlet-ring-gold-steel-3_600x.webp" alt="Marvel thanos ring" class="checkout__image">
+                <p class="checkout__title">Marvel thanos ring</p>
+                <p id="js--amount-thanos" class="checkout__amount"></p>
+            </li>
+        </ul>
+    </section>
+    <main>
+
+        <section class="inputs">
+            <div>
+                <input id="checkbox-ring" type="checkbox" class="filter">
+                <label for="checkbox-ring" class="label">Rings</label>
+            </div>
+            <div>
+                <input id="checkbox-bracelet" type="checkbox" class="filter">
+                <label for="checkbox-bracelet" class="label">Bracelets</label>
+            </div>  
+            <div>
+                <input id="checkbox-chain" type="checkbox" class="filter">
+                <label for="checkbox-chain" class="label">Chains</label>  
+            </div>
+        </section>
+        <article id="js--infinityRingModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/2510713_pandora-160779c01-48-ring.webp" alt="Marvel infinity Stones ring goud" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Marvel infinity Stones ring goud €15,00</h2>
+                <p class="modal__text">
+                    Draag met de kracht van de infinity stones ring uit marvel om zo te kunne uitstralen. Deze ring is gemaakt 
+                    van goede kwaliteit met diamanten en met goud. Ook is het helemaal hamdmatig gemaakt met de hand.
+                </p>
+                <button data-product="InfinityRing" class="marvel__button">Add to Cart</button>
+            </section>
+        </article>
+        <article id="js--silverChainModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/7401057016394.webp" alt="Marvel avengers silver chain" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Marvel avengers silver chain €22,00</h2>
+                <p class="modal__text">
+                    Deze Marvel avengers silvere ketting is gemaakt van puur silver en is met de hand gemaakt. We hebben deze in
+                    verschillende maten van lengtes voor vrouwen en mannen. Zoals 40cm, 45cm en 50cm voor vrouwen en voor mannen:
+                    50-55 cm.
+                </p>
+                <button data-product="avengers" class="marvel__button">Add to Cart</button>
+            </section>
+        </article>
+        <article id="js--DoctorStrangeModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/Movie-Jewelry-Doctor-Necklace-Dr-Strange-Steve-Cosplay-Agamotto-Eye-Pendent-Necklace-Genuine-Leather.webp" alt="Doctor Strange tijd ketting" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Doctor Strange tijd ketting €13,00</h2>
+                <p class="modal__text">
+                    Deze Doctor Strange tijd ketting is gemaakt van silver en een bepaalde stof zodat het geen pijn aan je nek doet. We hebben deze in
+                    verschillende maten van lengtes voor vrouwen en mannen. Zoals 40cm, 45cm en 50cm voor vrouwen en voor mannen:
+                    50-55 cm.
+                </p>
+                <button data-product="drStrange" class="marvel__button">Add to Cart</button>
+            </section>
+        </article>
+        <article id="js--ThanosInfinityModal" class="modal">
+            <figure class="modal__figure">
+                <img src="/img/marvel-thanos-infinity-gauntlet-ring-gold-steel-3_600x.webp" alt="Marvel Thanos infinity stone goud en zwart" class="modal__image">
+            </figure>
+            <section class="modal__section">
+                <h2 class="modal__heading">Marvel Thanos infinity ring €30,00</h2>
+                <p class="modal__text">
+                    Deze Doctor Strange tijd ketting is gemaakt van silver en een bepaalde stof zodat het geen pijn aan je nek doet. We hebben deze in
+                    verschillende maten van lengtes voor vrouwen en mannen. Zoals 40cm, 45cm en 50cm voor vrouwen en voor mannen:
+                    50-55 cm.
+                </p>
+                <button data-product="thanos" class="marvel__button">Add to Cart</button>
+            </section>
+        </article>
+        <article class="modal2" id="js--shoppingModal">
+            &#10003;Added to Cart
+        </article>
+        <article class="modal2" id="js--shoppingModal">
+            &#10003;Added to Cart
+        </article>
+
+    </main>
+    <footer class="balk"></footer>
+    <footer class="footer"></footer>
+</body>
+</html>
